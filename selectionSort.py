@@ -19,7 +19,7 @@ def selectionSort(unsortedList: list):
 		smallest = findSmallest(unsortedList)
 		sortedList.append(unsortedList.pop(smallest))
 	return sortedList
-l = list(range(0, 10000))
+l = list(range(0, 100000))
 shuffle(l)
 shuffledList = l
 elapsedTime = timeit('selectionSort(shuffledList)', 'from __main__ import shuffledList, selectionSort, findSmallest', number=1)
